@@ -1,0 +1,43 @@
+.recovery_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.recovery_form input {
+  width: 100%;
+  padding: 10px;
+  height: 35px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.recovery_form button {
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #65abfb;
+  color: #000000;
+  font-weight: bold;
+  font-size: 15px;
+  box-shadow: #40ff00 0px 0px 10px;
+}
+
+.recovery_form button:hover {
+  background-color: #0c7dfe;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.recovery-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 1px;
+  color: var(--color1);
+}

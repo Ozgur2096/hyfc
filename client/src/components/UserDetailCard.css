@@ -1,0 +1,39 @@
+.user-detail-card {
+  position: absolute;
+  margin: -150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  box-shadow: 0 0 10px var(--color3);
+  opacity: 0;
+  animation: anim-card 0.5s ease-in-out forwards;
+}
+
+.button-close-update-photo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.user-detail-card > div {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@keyframes anim-card {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,93 @@
+.nav-sign-up {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 5rem;
+  padding: 1rem 3rem;
+  width: 100%;
+}
+.about-us-link {
+  color: var(--color3);
+  text-decoration: none;
+}
+
+.nav-sign-up-btn {
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
+  width: 15em;
+  height: 3em;
+  font-size: 20px;
+  border-radius: 0.5em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.8);
+  line-height: 3em;
+  text-decoration: none;
+  transition: 0.5s;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  background: var(--color1);
+  padding-left: 2em;
+}
+
+.nav-sign-up-btn:hover {
+  transform: perspective(250px) rotateY(45deg);
+  padding-left: 5%;
+}
+.logoImgg {
+  width: 160px;
+  height: 50px;
+  object-fit: cover;
+  margin-top: 0.5rem;
+}
+
+.anim-logo {
+  animation: logo 1s ease-in-out infinite;
+}
+
+@keyframes logo {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 3rem;
+    padding: 1rem 3rem;
+    width: 100%;
+  }
+  .nav-sign-up-btn {
+    margin-top: 1rem;
+  }
+  .logoImgg {
+    width: 160px;
+    height: 50px;
+    object-fit: cover;
+    margin-top: 0.5rem;
+  }
+  .anim-logo {
+    animation: logo 1s ease-in-out infinite;
+  }
+  @keyframes logo {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
